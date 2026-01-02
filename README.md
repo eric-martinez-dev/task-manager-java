@@ -21,31 +21,25 @@ Expone una API REST para realizar operaciones CRUD sobre tareas.
 - Eliminar tareas
 
 ## Ejemplos de Endpoints 
+  
+Obtener todas las tareas  
+GET /tasks  
 
+Obtener una tarea por ID  
+GET /tasks/{id}  
 
-Obtener todas las tareas
-GET /tasks
+Crear una tarea  
+POST /tasks  
+Content-Type: application/json  
+{ "title": "Nueva tarea", "completed": false }  
 
+Actualizar una tarea  
+PUT /tasks/{id}  
+Content-Type: application/json  
+{ "title": "Tarea actualizada", "completed": true }  
 
-Obtener una tarea por ID
-GET /tasks/{id}
-
-
-Crear una tarea
-POST /tasks
-Content-Type: application/json
-{ "title": "Nueva tarea", "completed": false }
-
-
-Actualizar una tarea
-PUT /tasks/{id}
-Content-Type: application/json
-{ "title": "Tarea actualizada", "completed": true }
-
-
-Eliminar una tarea
-DELETE /tasks/{id}
-
+Eliminar una tarea  
+DELETE /tasks/{id}  
 
 ## Ejecución del proyecto
 
