@@ -20,6 +20,25 @@ Expone una API REST para realizar operaciones CRUD sobre tareas.
 - Actualizar tareas
 - Eliminar tareas
 
+## Ejemplos de Endpoints 
+- GET/tasks
+- Obtiene todas las tareas
+- GET/tasks/{id}
+- Obtiene una tarea por ID
+- POST/tasks
+
+  Content-Type:Application/json
+
+   {
+
+  "title": "Tarea actualizada",
+
+   "completed": true
+  
+   }
+
+  DELETE/tasks/{id} 
+
 ## Ejecución del proyecto
 
 1. Clonar el repositorio
